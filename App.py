@@ -42,31 +42,31 @@ quarter = int(Quarter)
 #Transaction_Scatter_Districts.drop(Transaction_Scatter_Districts.index[(Transaction_Scatter_Districts["State"] == "india")],axis = 0, inplace = True)
 
 #Scattergeo Data
-Transaction_Scatter_Districts = Transaction_Scatter_Districts.sort_values(by = ['Place_Name'], ascending = False)
-Scatter_Geo_Dataset = Scatter_Geo_Dataset.sort_values(by = ['District'], ascending = False)
+#Transaction_Scatter_Districts = Transaction_Scatter_Districts.sort_values(by = ['Place_Name'], ascending = False)
+#Scatter_Geo_Dataset = Scatter_Geo_Dataset.sort_values(by = ['District'], ascending = False)
 
-Total_Amount = []
-for i in Transaction_Scatter_Districts['Total_Amount']:
-    Total_Amount.append(i)
-Scatter_Geo_Dataset['Total_Amount'] = Total_Amount
-Total_Transaction = []
-for i in Transaction_Scatter_Districts['Total_Transactions_count']:
-    Total_Transaction.append(i)
-Scatter_Geo_Dataset['Total_Transactions'] = Total_Transaction
-Scatter_Geo_Dataset['Year_Quarter'] = str(year) + '-Q' +str(Quarter)
+#Total_Amount = []
+#for i in Transaction_Scatter_Districts['Total_Amount']:
+#    Total_Amount.append(i)
+#Scatter_Geo_Dataset['Total_Amount'] = Total_Amount
+#Total_Transaction = []
+#for i in Transaction_Scatter_Districts['Total_Transactions_count']:
+ #   Total_Transaction.append(i)
+#Scatter_Geo_Dataset['Total_Transactions'] = Total_Transaction
+#Scatter_Geo_Dataset['Year_Quarter'] = str(year) + '-Q' +str(Quarter)
 
 
 #Coropleth Data
-Coropleth_Dataset = Coropleth_Dataset.sort_values(by = ['state'], ascending = False)
-Transaction_Coropleth_States = Transaction_Coropleth_States.sort_values(by = ['Place_Name'], ascending = False)
-Total_Amount = []
-for i in Transaction_Coropleth_States['Total_Amount']:
-    Total_Amount.append(i)
-Coropleth_Dataset['Total_Amount'] = Total_Amount
-Total_Transaction = []
-for i in Transaction_Coropleth_States['Total_Transactions_count']:
-    Total_Transaction.append(i)
-Coropleth_Dataset['Total_Transactions'] = Total_Transaction
+#Coropleth_Dataset = Coropleth_Dataset.sort_values(by = ['state'], ascending = False)
+#Transaction_Coropleth_States = Transaction_Coropleth_States.sort_values(by = ['Place_Name'], ascending = False)
+#Total_Amount = []
+#for i in Transaction_Coropleth_States['Total_Amount']:
+ #   Total_Amount.append(i)
+#Coropleth_Dataset['Total_Amount'] = Total_Amount
+#Total_Transaction = []
+#for i in Transaction_Coropleth_States['Total_Transactions_count']:
+ #   Total_Transaction.append(i)
+#Coropleth_Dataset['Total_Transactions'] = Total_Transaction
 
 
 #Fig1 India Map
