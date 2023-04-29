@@ -483,7 +483,7 @@ with tab3:
       #             We Can see that Registered_Users and App Openings tend to increase every year""")
         
 #st.write('## :pink[Top 3 States Data]')
-c1,c2 = st.columns(2)
+#c1,c2 = st.columns(2)
 with c1:
     Year = st.selectbox(
             'Select the Year',
