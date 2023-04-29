@@ -523,4 +523,5 @@ with tab3:
 
 #with col4:
  #   st.markdown("### :pink[Total Amount]")
-   st.write(y['Total_Amount'][1:4])
+  # st.write(y['Total_Amount'][1:4])
+
