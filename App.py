@@ -2,21 +2,21 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st 
 import warnings
-#import pymysql
-#import plotly.graph_objects as go
-#from plotly.subplots import make_subplots
-#from matplotlib import pyplot as plt
+import pymysql
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+from matplotlib import pyplot as plt
 warnings.filterwarnings("ignore")
 st. set_page_config(layout="wide")
 
-#Data_Aggregated_Transaction_df= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Aggregated_Transaction_Table.csv")
-#Data_Aggregated_User_Summary_df= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Aggregated_User_Summary_Table.csv")
-#Data_Aggregated_User_df= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Aggregated_User_Table.csv")
-#Scatter_Geo_Dataset =  pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Map_Districts_Longitude_Latitude1.csv")
-#Coropleth_Dataset =  pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Map_IndiaStates_TU.csv")
-#Data_Map_Transaction_df = pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Map_Transaction_Table.csv")
-#Data_Map_User_Table= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Map_User_Table.csv")
-#Indian_States= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Longitude_Latitude_State_Table.csv")
+Data_Aggregated_Transaction_df= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Aggregated_Transaction_Table.csv")
+Data_Aggregated_User_Summary_df= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Aggregated_User_Summary_Table.csv")
+Data_Aggregated_User_df= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Aggregated_User_Table.csv")
+Scatter_Geo_Dataset =  pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Map_Districts_Longitude_Latitude1.csv")
+Coropleth_Dataset =  pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Map_IndiaStates_TU.csv")
+Data_Map_Transaction_df = pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Map_Transaction_Table.csv")
+Data_Map_User_Table= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Data_Map_User_Table.csv")
+Indian_States= pd.read_csv(r"C:\Users\Sylvester\Desktop\Streamlit\Phonepe\pulse\CSV\Longitude_Latitude_State_Table.csv")
 
 column_T1,column_T2 = st.columns([2,8])
 with column_T2:
