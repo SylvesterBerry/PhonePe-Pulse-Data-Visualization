@@ -375,7 +375,7 @@ with tab2:
         )
     
     #districts = Data_Map_User_Table.loc[(Data_Map_User_Table['State'] == state) & (Data_Map_User_Table['Year'] == int(Year))
-                                        &(Data_Map_User_Table['Quarter'] == int(Quarter))]
+                                       # &(Data_Map_User_Table['Quarter'] == int(Quarter))]
     #l = len(districts)
     #fig = px.bar(districts, x = 'Place_Name', y = 'App_Openings', color = "App_Openings",
      #            color_continuous_scale="reds")
