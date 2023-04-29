@@ -142,7 +142,7 @@ with st.expander("See Bargraph for the same data"):
 
 ##Transaction Analysis
 #st.write('# :violet[Transaction Analysis : currency_exchange:]')
-tab1, tab2, tab3, tab4 = st.tabs(["State Analysis", "District Analysis", "Year Analysis", "Overall Analysis"])
+#tab1, tab2, tab3, tab4 = st.tabs(["State Analysis", "District Analysis", "Year Analysis", "Overall Analysis"])
 
 #Transaction Figure1 State Analysis
 with tab1:
