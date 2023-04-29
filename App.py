@@ -127,7 +127,7 @@ with colT1:
             * Bigger the circle Higher the Transactions \n 
             * Hover_Data shows Total Transactions and Total Amount \n
             """
-    )
+   # )
 
 
 
