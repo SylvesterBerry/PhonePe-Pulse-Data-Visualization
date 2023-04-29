@@ -254,7 +254,7 @@ with tab3:
     Year = int(Y)
     Mode = M
     Y#ear_PaymentMode = Year_PaymentMode.loc[(Year_PaymentMode['Year'] == Year) &
-                                            (Year_PaymentMode['Payment_Mode'] == Mode)]
+                                            #(Year_PaymentMode['Payment_Mode'] == Mode)]
     #States_List = Year_PaymentMode['State'].unique()
     #State_groupby_YP = Year_PaymentMode.groupby('State')
     #Year_PaymentMode_Table = State_groupby_YP.sum()
