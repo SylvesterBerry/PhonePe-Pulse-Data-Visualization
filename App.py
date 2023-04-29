@@ -505,25 +505,25 @@ with tab3:
 #topst = top_states_T.groupby('State')
 #x = topst.sum().sort_values(by = ['Total_Transactions_count'], ascending=False)
 #y = topst.sum().sort_values(by = ['Total_Amount'], ascending=False)
-col1, col2, col3, col4 = st.columns([2.5, 2.5, 2.5, 2.5])
+#col1, col2, col3, col4 = st.columns([2.5, 2.5, 2.5, 2.5])
 
-with col1:
-    rt = top_states_r[1:4]
-    st.markdown("### :pink[Registered_Users]")
-    st.markdown(rt[[ 'State', 'Registered_Users']].style.hide(axis = "index").to_html(), unsafe_allow_html=True)
+#with col1:
+ #   rt = top_states_r[1:4]
+  #  st.markdown("### :pink[Registered_Users]")
+   # st.markdown(rt[[ 'State', 'Registered_Users']].style.hide(axis = "index").to_html(), unsafe_allow_html=True)
 
-with col2:
-    at = top_states_r[1:4]
-    st.markdown("### :pink[PhonePe App Openings]")
-    st.markdown(at[[ 'State', 'AppOpenings']].style.hide(axis = "index").to_html(), unsafe_allow_html=True)
+#with col2:
+ #   at = top_states_r[1:4]
+  #  st.markdown("### :pink[PhonePe App Openings]")
+   # st.markdown(at[[ 'State', 'AppOpenings']].style.hide(axis = "index").to_html(), unsafe_allow_html=True)
 
-with col3:
-    st.markdown("### :pink[Total Transactions]")
-    st.write(x[['Total_Transactions_count']][1:4])
+#with col3:
+ #   st.markdown("### :pink[Total Transactions]")
+  #  st.write(x[['Total_Transactions_count']][1:4])
 
-with col4:
-    st.markdown("### :pink[Total Amount]")
-    st.write(y['Total_Amount'][1:4])
+#with col4:
+ #   st.markdown("### :pink[Total Amount]")
+  #  st.write(y['Total_Amount'][1:4])
 
 
 
