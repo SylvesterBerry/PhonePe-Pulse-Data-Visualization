@@ -137,8 +137,8 @@ with colT1:
  #            y = 'Total_Transactions',
   #           title = str(year) + "Quarter-" + str(quarter))
 with st.expander("See Bargraph for the same data"):
-    st.plotly_chart(fig, use_container_width = True)
-    st.info('**:indigo[The above graph shows the increasing order of Phonepe Transactions regarding the states of India.**]')
+    #st.plotly_chart(fig, use_container_width = True)
+    #st.info('**:indigo[The above graph shows the increasing order of Phonepe Transactions regarding the states of India.**]')
 
 ##Transaction Analysis
 st.write('# :violet[Transaction Analysis : currency_exchange:]')
@@ -182,13 +182,13 @@ with tab1:
     colT1, colT2 = st.columns([7,7])
     with colT1:
         st.write('###' + State.upper())
-        st.plotly_chart(fig, use_container_width = True)
-    with colT2:
-        st.info("""
-        BarGraph Details:\n
-                   * This data belongs to state selected by us\n
-                   * X Axis -> All years with all quarters\n
-                   * Y Axis -> Total Transactions""")
+       # st.plotly_chart(fig, use_container_width = True)
+    #with colT2:
+       # st.info("""
+        #BarGraph Details:\n
+         #          * This data belongs to state selected by us\n
+          #         * X Axis -> All years with all quarters\n
+           #        * Y Axis -> Total Transactions""")
         
 
 
@@ -228,15 +228,15 @@ with tab2:
     colT1, colT2 = st.columns([7,7])
     with colT1:
         st.write('###' + state.upper() + ' With ' + str(l) + 'Districts')
-        st.plotly_chart(fig,use_container_width=True)
-    with colT2:
-        st.info("""
-                 BarGraph Details:\n
-                             * Data belongs to state gets selected by us\n
-                             * X Axix -> Districts of selected state
-                             * Y Axis -> Total Transactions
-                             """
-                )
+       # st.plotly_chart(fig,use_container_width=True)
+    #with colT2:
+     #   st.info("""
+      #           BarGraph Details:\n
+       #                      * Data belongs to state gets selected by us\n
+        #                     * X Axix -> Districts of selected state
+         #                    * Y Axis -> Total Transactions
+          #                   """
+           #     )
 
 
 ##Transaction Figure3 Analysis
@@ -268,15 +268,15 @@ with tab3:
     colT1, colT2 = st.columns([7,7])
     with colT1:
         st.write('###' + str(Year) + ' Data Analysis ')
-        st.plotly_chart(fig2, use_container_width=True)
-    with colT2:
-        st.info("""
-                   Bargraph Details:\n
-                                * Data belongs to selected year by us
-                                * X Axis -> States in increasing order of Total Transactions
-                                * Y Axis -> Total Transactions
-                                """
-                )
+        #st.plotly_chart(fig2, use_container_width=True)
+    #with colT2:
+     #   st.info("""
+      #             Bargraph Details:\n
+       #                         * Data belongs to selected year by us
+        #                        * X Axis -> States in increasing order of Total Transactions
+         #                       * Y Axis -> Total Transactions
+          #                      """
+           #     )
         
 ##Transaction Figure4 Overall Analysis
 with tab4:
@@ -291,11 +291,11 @@ with tab4:
     #col1, col2 = st.columns([0.65, 0.35])
     with col1:
         st.write('### :blue[Drastical Increase in Transactions]')
-        st.plotly_chart(fig1)
-    with col2:
+        #st.plotly_chart(fig1)
+    #with col2:
         st.write('### :blue[Year Wise Transaction Analysis in India]')
         st.markdown(years_Table.style.hide(axis = 'index').to_html(), unsafe_allow_html=True)
-        st.info("""We can see that the online transactions has drastically every year""")
+     #   st.info("""We can see that the online transactions has drastically every year""")
 
 # $$$$$$$$$$$$$$$$$$$$$$$$$ USER ANALYSIS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 st.write('# :violet[User Data Analysis]')
@@ -335,16 +335,16 @@ with tab1:
     colU1, colU2 = st.columns([7,7])
     with colU1:
         st.write("###", state.upper())
-        st.plotly_chart(fig, use_container_width=True, height =200)
+       # st.plotly_chart(fig, use_container_width=True, height =200)
 
-    with colU2:
-        st.info("""
+    #with colU2:
+     #   st.info("""
                   Bargraph Details:\n
                                 * Select a state\n
                                 * X Axis -> Registered_Users and App Openings\n
                                 * Y Axis -> Percentage of Registered_users and App Openings
                                 """
-                )
+           #     )
     
 ## User District Analysis
 
@@ -383,18 +383,19 @@ with tab2:
     with colU1:
         if l:
             st.write('###' +state.upper()+ 'With' + str(l) + 'Districts')
-            st.plotly_chart(fig, use_container_width=True)
+          #  st.plotly_chart(fig, use_container_width=True)
 
         else:
             st.write('### Districts data is not available for' + state.upper())
         
-    with colU2:
-        if l:
-            st.info("""
+   # with colU2:
+    #    if l:
+     #       st.info("""
                       Bargraph Details:\n
                                  * Data belongs to state selected by us\n
                                  * X Axix -> Districts from selected state\n
-                                 * Y Axis -> App Openings""")
+                              * Y Axis -> App Openings"""
+            #)
 
         
 ##User Year Analysis
@@ -435,14 +436,14 @@ with tab3:
     colU1, colU2 = st.columns([7,7])
     with colU1:
         st.write("###", state.upper() + 'in' + Y)
-        st.plotly_chart(fig3, use_container_width=True)
-    with colU2:
-        st.info("""
+       # st.plotly_chart(fig3, use_container_width=True)
+    #with colU2:
+     #   st.info("""
                    Chart Details : \n
                                * Select the data by means of State and Year
                                * Percentage of Registered_Users represented with Chart through Device Brand
                                """
-                )
+      #          )
     b = b.sort_values(by = ['Registered_Users_Count'])
     fig4 = px.bar(b, x = 'brand', y = 'Registered_Users_Count', color = "Registered_Users_Count",
                   title = 'In ' + state + 'in ' + str(y),
