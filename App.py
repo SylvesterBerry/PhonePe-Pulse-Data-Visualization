@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st 
 import warnings
 #import pymysql
-import plotly.graph_objects as go
+#import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 #from matplotlib import pyplot as plt
 warnings.filterwarnings("ignore")
