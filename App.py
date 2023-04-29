@@ -37,9 +37,9 @@ with c2:
 year = int(Year)
 quarter = int(Quarter)
 
-Transaction_Scatter_Districts = Data_Map_Transaction_df.loc[(Data_Map_Transaction_df['Year'] == year) & (Data_Map_Transaction_df['Quarter'] == quarter) ].copy()
-Transaction_Coropleth_States = Transaction_Scatter_Districts[Transaction_Scatter_Districts["State"] == "india"]
-Transaction_Scatter_Districts.drop(Transaction_Scatter_Districts.index[(Transaction_Scatter_Districts["State"] == "india")],axis = 0, inplace = True)
+#Transaction_Scatter_Districts = Data_Map_Transaction_df.loc[(Data_Map_Transaction_df['Year'] == year) & (Data_Map_Transaction_df['Quarter'] == quarter) ].copy()
+#Transaction_Coropleth_States = Transaction_Scatter_Districts[Transaction_Scatter_Districts["State"] == "india"]
+#Transaction_Scatter_Districts.drop(Transaction_Scatter_Districts.index[(Transaction_Scatter_Districts["State"] == "india")],axis = 0, inplace = True)
 
 #Scattergeo Data
 Transaction_Scatter_Districts = Transaction_Scatter_Districts.sort_values(by = ['Place_Name'], ascending = False)
