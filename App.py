@@ -484,17 +484,17 @@ with tab3:
         
 #st.write('## :pink[Top 3 States Data]')
 #c1,c2 = st.columns(2)
-with c1:
-    Year = st.selectbox(
-            'Select the Year',
-            ('2018', '2019', '2020', '2021', '2022'),key = 'y1h2k'
+#with c1:
+ #   Year = st.selectbox(
+  #          'Select the Year',
+   #         ('2018', '2019', '2020', '2021', '2022'),key = 'y1h2k'
 
-        )
-with c2:
-    Quarter = st.selectbox(
-            'Select the Quarter',
-            ('1', '2', '3', '4'), key = 'qgwe2'
-        )
+    #    )
+#with c2:
+ #   Quarter = st.selectbox(
+  #          'Select the Quarter',
+   #         ('1', '2', '3', '4'), key = 'qgwe2'
+    #    )
     
 #Data_Map_User_df = Data_Aggregated_User_Summary_df.copy()
 #top_states = Data_Map_User_df.loc[(Data_Map_User_df['Year'] == int(Year)) & (Data_Map_User_df['Quarter'] == int(Quarter))]
