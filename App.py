@@ -339,11 +339,11 @@ with tab1:
 
     #with colU2:
      #   st.info("""
-                  Bargraph Details:\n
-                                * Select a state\n
-                                * X Axis -> Registered_Users and App Openings\n
-                                * Y Axis -> Percentage of Registered_users and App Openings
-                                """
+      #            Bargraph Details:\n
+       #                         * Select a state\n
+        #                        * X Axis -> Registered_Users and App Openings\n
+         #                       * Y Axis -> Percentage of Registered_users and App Openings
+          #                      """
            #     )
     
 ## User District Analysis
@@ -391,10 +391,10 @@ with tab2:
    # with colU2:
     #    if l:
      #       st.info("""
-                      Bargraph Details:\n
-                                 * Data belongs to state selected by us\n
-                                 * X Axix -> Districts from selected state\n
-                              * Y Axis -> App Openings"""
+          #            Bargraph Details:\n
+           #                      * Data belongs to state selected by us\n
+            #                     * X Axix -> Districts from selected state\n
+             #                 * Y Axis -> App Openings"""
             #)
 
         
@@ -439,17 +439,17 @@ with tab3:
        # st.plotly_chart(fig3, use_container_width=True)
     #with colU2:
      #   st.info("""
-                   Chart Details : \n
-                               * Select the data by means of State and Year
-                               * Percentage of Registered_Users represented with Chart through Device Brand
-                               """
+             #      Chart Details : \n
+              #                 * Select the data by means of State and Year
+               #                * Percentage of Registered_Users represented with Chart through Device Brand
+                #               """
       #          )
-    b = b.sort_values(by = ['Registered_Users_Count'])
-    fig4 = px.bar(b, x = 'brand', y = 'Registered_Users_Count', color = "Registered_Users_Count",
-                  title = 'In ' + state + 'in ' + str(y),
-                  color_continuous_scale= "peach")
+    #b = b.sort_values(by = ['Registered_Users_Count'])
+    #fig4 = px.bar(b, x = 'brand', y = 'Registered_Users_Count', color = "Registered_Users_Count",
+     #             title = 'In ' + state + 'in ' + str(y),
+      #            color_continuous_scale= "peach")
     with st.expander("See Bargraph for same data"):
-        st.plotly_chart(fig4, use_container_width=True)
+       # st.plotly_chart(fig4, use_container_width=True)
     
 
 ## User Overall Analysis
@@ -464,23 +464,23 @@ with tab4:
     col1, col2 = st.columns([0.7,0.3])
     with col1:
         labels = ["US", "China", "European Union", "Russian Federation", "Brazil", "India", "Rest of World"]
-        fig = make_subplots(rows = 1, cols =2, specs = [[{'type' : 'domain'}, {'type' : 'domain'}]])
-        fig.add_trace(go.Pie(labels = years_Table['year'], values = years_Table['Registered_Users'], name = "Registered_Users"), 1, 1)
-        fig.add_trace(go.Pie(labels = years_Table['year'], values = years_Table['AppOpenings'], name = "App Openings"), 1, 2)
+      #  fig = make_subplots(rows = 1, cols =2, specs = [[{'type' : 'domain'}, {'type' : 'domain'}]])
+       # fig.add_trace(go.Pie(labels = years_Table['year'], values = years_Table['Registered_Users'], name = "Registered_Users"), 1, 1)
+        #fig.add_trace(go.Pie(labels = years_Table['year'], values = years_Table['AppOpenings'], name = "App Openings"), 1, 2)
 
-        fig.update_traces(hole = .6, hoverinfo = "label+percent+name")
+        #fig.update_traces(hole = .6, hoverinfo = "label+percent+name")
 
-        fig.update_layout(
-            title_text = "Users Data 2018 to 2022",
-            annotations = [dict(text = 'Users', x = 0.18, y = 0.5, font_size = 20, showarrow = False),
-                           dict(text = 'App', x = 0.82, y = 0.5, font_size = 20, showarrow = False)]
-        )
-        st.plotly_chart(fig)
+        #fig.update_layout(
+         #   title_text = "Users Data 2018 to 2022",
+          #  annotations = [dict(text = 'Users', x = 0.18, y = 0.5, font_size = 20, showarrow = False),
+           #                dict(text = 'App', x = 0.82, y = 0.5, font_size = 20, showarrow = False)]
+        #)
+        #st.plotly_chart(fig)
     
-    with col2:
-        st.markdown(years_Table.style.hide(axis = 'index').to_html(), unsafe_allow_html=True)
-        st.info("""
-                   We Can see that Registered_Users and App Openings tend to increase every year""")
+   # with col2:
+    #    st.markdown(years_Table.style.hide(axis = 'index').to_html(), unsafe_allow_html=True)
+     #   st.info("""
+      #             We Can see that Registered_Users and App Openings tend to increase every year""")
         
 st.write('## :pink[Top 3 States Data]')
 c1,c2 = st.columns(2)
