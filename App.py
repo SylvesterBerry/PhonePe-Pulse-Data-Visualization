@@ -145,7 +145,7 @@ with st.expander("See Bargraph for the same data"):
 #tab1, tab2, tab3, tab4 = st.tabs(["State Analysis", "District Analysis", "Year Analysis", "Overall Analysis"])
 
 #Transaction Figure1 State Analysis
-with tab1:
+#with tab1:
 #    Data_Aggregated_Transaction = Data_Aggregated_Transaction_df.copy()
  #   Data_Aggregated_Transaction.drop(Data_Aggregated_Transaction.index[(Data_Aggregated_Transaction["State"] == "India")], axis = 0, inplace = True)
   #  State_PaymentMode = Data_Aggregated_Transaction.copy()
