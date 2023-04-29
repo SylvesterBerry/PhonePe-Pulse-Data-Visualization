@@ -118,7 +118,7 @@ st.write("### **:blue[PhonePe India Map]**")
 colT1,colT2 = st.columns([6,6])
 with colT1:
    # st.plotly_chart(fig_ch, use_container_width = True)
-with colT2:
+#with colT2:
     #st.info(
         """Map Details:\n
 
