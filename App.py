@@ -70,11 +70,11 @@ quarter = int(Quarter)
 
 
 #Fig1 India Map
-Indian_States = Indian_States.sort_values(by = ['state'], ascending =False)
-Indian_States['Registered_Users'] = Coropleth_Dataset['Registered_Users']
-Indian_States['Total_Amount'] = Coropleth_Dataset['Total_Amount']
-Indian_States['Total_Transactions'] = Coropleth_Dataset['Total_Transactions']
-Indian_States['Year_Quarter'] = str(year) + '-Q' + str(quarter)
+#Indian_States = Indian_States.sort_values(by = ['state'], ascending =False)
+#Indian_States['Registered_Users'] = Coropleth_Dataset['Registered_Users']
+#Indian_States['Total_Amount'] = Coropleth_Dataset['Total_Amount']
+#Indian_States['Total_Transactions'] = Coropleth_Dataset['Total_Transactions']
+#Indian_States['Year_Quarter'] = str(year) + '-Q' + str(quarter)
 
 fig = px.scatter_geo(Indian_States,
                      lon = Indian_States['Longitude'],
