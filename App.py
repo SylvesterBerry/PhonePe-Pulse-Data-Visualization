@@ -461,9 +461,9 @@ with tab3:
     #years_Table['year'] = years_List
     #total_trans = years_Table['Registered_Users'].sum()
     #fig1 = px.pie(years_Table, values = 'Registered_Users', names = 'year', color_discrete_sequence = px.colors.sequential.Rainbow, title = 'Total Registered_Users (2018 to 2022)')
-    col1, col2 = st.columns([0.7,0.3])
-    with col1:
-        labels = ["US", "China", "European Union", "Russian Federation", "Brazil", "India", "Rest of World"]
+   # col1, col2 = st.columns([0.7,0.3])
+    #with col1:
+     #   labels = ["US", "China", "European Union", "Russian Federation", "Brazil", "India", "Rest of World"]
       #  fig = make_subplots(rows = 1, cols =2, specs = [[{'type' : 'domain'}, {'type' : 'domain'}]])
        # fig.add_trace(go.Pie(labels = years_Table['year'], values = years_Table['Registered_Users'], name = "Registered_Users"), 1, 1)
         #fig.add_trace(go.Pie(labels = years_Table['year'], values = years_Table['AppOpenings'], name = "App Openings"), 1, 2)
