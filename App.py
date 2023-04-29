@@ -141,7 +141,7 @@ with st.expander("See Bargraph for the same data"):
     #st.info('**:indigo[The above graph shows the increasing order of Phonepe Transactions regarding the states of India.**]')
 
 ##Transaction Analysis
-st.write('# :violet[Transaction Analysis : currency_exchange:]')
+#st.write('# :violet[Transaction Analysis : currency_exchange:]')
 tab1, tab2, tab3, tab4 = st.tabs(["State Analysis", "District Analysis", "Year Analysis", "Overall Analysis"])
 
 #Transaction Figure1 State Analysis
